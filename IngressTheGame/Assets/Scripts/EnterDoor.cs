@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EnterDoor : MonoBehaviour
 {
     [SerializeField] private bool fakeDoor;
-    [SerializeField] private Transform teleportEnd; //respawn point
+    [SerializeField] private Transform target; //respawn point
     // Start is called before the first frame update
     void Start()
     {
@@ -35,10 +35,16 @@ public class EnterDoor : MonoBehaviour
         {
             var charControl = other.gameObject.GetComponent <CharacterController>(); //Get component to disable
             charControl.enabled = false; //disable it
-            other.gameObject.transform.position = teleportEnd.position; //teleport our player
+            other.gameObject.transform.position = target.position; //teleport our player
             charControl.enabled = true; //re-enable it
             print("wrong door");
 		}
+
+		if (other.gameObject.tag == "Push") 
+        {
+
+            other.transform.position = target.position;
+        }
 	}
 
 }

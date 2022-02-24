@@ -7,11 +7,12 @@ TagManager:
   - CinemachineTarget
   - Door
   - FakeDoor
+  - Push
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Push
   - Water
   - UI
   - 
