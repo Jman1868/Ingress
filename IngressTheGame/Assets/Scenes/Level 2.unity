@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4207296490094779401, guid: 3f75e9a64e103c1499c770d35b8223b4, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: d83f252b43e7cda46a7399df1d63c982, type: 2}
     - target: {fileID: 8965267416006957336, guid: 3f75e9a64e103c1499c770d35b8223b4, type: 3}
       propertyPath: m_Name
       value: GameLevel
