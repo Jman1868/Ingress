@@ -40,7 +40,7 @@ public class EnterDoor : MonoBehaviour
             print("wrong door");
 		}
 
-		if (other.gameObject.tag == "Push") 
+		if (other.gameObject.tag == "Push" && fakeDoor==true) 
         {
 
             other.transform.position = target.position;
