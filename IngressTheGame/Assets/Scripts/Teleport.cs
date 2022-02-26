@@ -29,11 +29,6 @@ public class Teleport : MonoBehaviour
             print("teleporting player");
         }
 
-        if (other.gameObject.tag == "Push")
-        {
-
-            other.transform.position = target.position;
-            print("teleporting object");
-        }
+    
     }
 }

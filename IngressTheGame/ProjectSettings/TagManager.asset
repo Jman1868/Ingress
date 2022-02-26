@@ -8,6 +8,7 @@ TagManager:
   - Door
   - FakeDoor
   - Push
+  - test
   layers:
   - Default
   - TransparentFX

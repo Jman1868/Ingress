@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.011150832, g: 0.16095531, b: 0.6434319, a: 1}
+  m_IndirectSpecularColor: {r: 0.011150832, g: 0.0916295, b: 0.5583761, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: ae537c8c8f7f2c44fae50d0a9ec5c2f7, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 312d221f64e0a3f4e91483c2a6ae2a29, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -16276,7 +16276,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fakeDoor: 0
-  target: {fileID: 8965267415423772347}
+  PlayerTele: {fileID: 0}
+  itemTele: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!4 &4710724581108864065
 Transform:
   m_ObjectHideFlags: 0

@@ -46,8 +46,7 @@ public class spawner : MonoBehaviour
                     //activePrefab[counter] = Instantiate(theBox, spawnPos);
                     counter++;
 
-            }
-               
+                }   
             }
 		if (counter > 0)
 		{
@@ -56,29 +55,18 @@ public class spawner : MonoBehaviour
 
                 print("pressed f");
                 var temp = cubes[counter-1].gameObject;
-                cubes.RemoveAt(counter-1); //list sorts itself so we need to go back
+                cubes.RemoveAt(counter-1); //list resorts itself. counter-1 gets the LAST item in the list
                 Destroy(temp);
 
                 counter--;
             }
         }
  
-
 		
-            
-            
-            
-		
-
-        pressE = false;
+        //Reset input
+        pressE = false; 
         pressF = false;
     }
 
-    private void CreatePrefab()
-    {
-        //if (activePrefab != null) Destroy(activePrefab);
-        //activePrefab = Instantiate(YourPrefab, YourTouchPosition, Quaternion.identity) as GameObject;
-
-    }
 }
   
