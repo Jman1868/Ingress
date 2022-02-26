@@ -10,7 +10,6 @@ public class EnterDoor : MonoBehaviour
     [SerializeField] private Transform PlayerTele; //respawn point
     [SerializeField] private Transform itemTele; //respawn point
 
-
     [SerializeField] private AudioClip sound;
     private AudioSource source;
 
@@ -36,8 +35,8 @@ public class EnterDoor : MonoBehaviour
         
         if (other.gameObject.tag == "Player" && fakeDoor == false) //Real door
 		{
-            print("inside");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //load next scene in index
+
         }
         else if (other.gameObject.tag == "Player" && fakeDoor == true) //Fake door
         {

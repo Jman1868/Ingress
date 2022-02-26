@@ -13,11 +13,11 @@ public class Laser : MonoBehaviour
 	private Transform reset;
 
 	public GameObject playerobj;
-	public CharacterController charControl;
+	private CharacterController playerCapsule;
 	private void Start()
 	{
 		LineRenderer = GetComponent<LineRenderer>();
-		 charControl = playerobj.GetComponent<CharacterController>();
+		 playerCapsule = playerobj.GetComponent<CharacterController>();
 	}
 	// Update is called once per frame
 	void Update()
@@ -38,12 +38,12 @@ public class Laser : MonoBehaviour
 			if (hit.transform.tag == "Player")
 			{
 				
-				charControl.enabled = false; //disable it
+				playerCapsule.enabled = false; //disable it
 
 				
 				hit.transform.parent.position = reset.position; //teleport our player 
 
-				charControl.enabled = true; //re-enable it
+				playerCapsule.enabled = true; //re-enable it
 
 				//hit.transform.position = reset.transform.position;
 

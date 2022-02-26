@@ -198,7 +198,6 @@ MonoBehaviour:
   startPoint: {fileID: 3752320860848255145}
   reset: {fileID: 3752320861511222631}
   playerobj: {fileID: 0}
-  charControl: {fileID: 0}
 --- !u!1 &3752320860848255144
 GameObject:
   m_ObjectHideFlags: 0
