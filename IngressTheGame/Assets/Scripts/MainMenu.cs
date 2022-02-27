@@ -7,7 +7,13 @@ using UnityEngine.Audio;
 public class MainMenu : MonoBehaviour
 {
 	public AudioMixer audioMixer;
-   public void playGame()
+
+	private void Start()
+	{
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.Confined;
+	}
+	public void playGame()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
